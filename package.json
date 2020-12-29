@@ -1,0 +1,24 @@
+{
+  "name": "node-exercise",
+  "version": "1.0.0",
+  "description": "A little exercise using a Star Wars API [https://swapi.dev/](https://swapi.dev/) and [express.js](https://expressjs.com/)",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start-deb": "node --inspect index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:gosolo/challenges/node-exercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

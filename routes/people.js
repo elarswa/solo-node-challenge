@@ -13,6 +13,7 @@ router.get('/people', (req, res) => {
             console.log("Sending People Request");
             /*initial url*/
             getPeople('https://swapi.dev/api/people/?search=', [], resolve, reject);
+            cache.setTime(60000); // 1 min timeout
 
         }).then(result => {
             // if there is a result, it's an error: see function getPeople

@@ -22,6 +22,7 @@ router.get('/planets', (req, res) => {
             console.log("Sending Planet Request");
             /*initial url*/
             getPlanets('https://swapi.dev/api/planets/?search=', [], resolve, reject);
+            cache.setTime(60000); // 1 min timeout
 
         });
         Promise.all([p1, p2])

@@ -7,6 +7,12 @@ class Cache {
         }
         return Cache.instance;
     }
+    setTime(time) { // call after sending axios request to erase cache on timeout
+      setTimeout((() => {
+        this.peopleArray = [];
+        this.planetsArray = [];
+      }), time)
+    }
 }
 const instance = new Cache();
 module.exports = instance;
